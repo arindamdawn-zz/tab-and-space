@@ -1,0 +1,6 @@
+{
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  "tailwindCSS.emmetCompletions": true
+}
