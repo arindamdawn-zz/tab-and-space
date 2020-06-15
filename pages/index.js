@@ -8,22 +8,17 @@ const Index = ({ title, description, posts }) => {
     <Layout pageTitle={title}>
       <main className="max-w-sm m-auto">
         My posts
-        <ul>
-          {posts.map(({ id, title, date, draft }) => {
-            return (
-              <>
-                {!draft && (
-                  <li key={id}>
-                    <Link href="/posts/[id]" as={`/posts/${id}`}>
-                      <a>{title}</a>
-                    </Link>
-                    <br />
-                  </li>
-                )}
-              </>
-            );
-          })}
-        </ul>
+        {posts.map(({ id, title, date, draft }) => {
+          return (
+            <div key={id}>
+              {!draft && (
+                <Link href="/posts/[id]" as={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+              )}
+            </div>
+          );
+        })}
       </main>
     </Layout>
   );

@@ -1,22 +1,22 @@
 ---
-title: 'Must needed tool in your dev toolkit - Regular Expressions'
-date: '2020-06-13T14:17:13.150Z'
+title: 'Awesome resources - Regular Expressions'
+date: '2020-06-15T14:17:13.150Z'
 tags: ['javascript', 'general']
 draft: false
 ---
 
 This is my first blog post and I would like to start my dev blogging journey sharing some compiled resources about
 regular expressions which I believe is a very powerful concept and is often found to be quite confusing or hard to
-interpret. 
+interpret.
 
-> A regular expression (shortened as regex or regexp also referred to as rational expression) is a sequence of characters 
-> that define a search pattern. Usually such patterns are used by string searching algorithms for "find" or "find and 
-> replace" operations on strings, or for input validation. It is a technique developed in theoretical computer science 
+> A regular expression (shortened as regex or regexp also referred to as rational expression) is a sequence of characters
+> that define a search pattern. Usually such patterns are used by string searching algorithms for "find" or "find and
+> replace" operations on strings, or for input validation. It is a technique developed in theoretical computer science
 > and formal language theory. (Wikipedia).
 
 Regex are immensely powerful and what I find so fascinating about them is that they are language agnostic and have
-existed since the early days of computer. [Stephen Cole Kleene](https://en.wikipedia.org/wiki/Stephen_Cole_Kleene) 
-in the mid 1950s invented regular expressions. 
+existed since the early days of computer. [Stephen Cole Kleene](https://en.wikipedia.org/wiki/Stephen_Cole_Kleene)
+in the mid 1950s invented regular expressions.
 
 My personal experience with regex hasn't been very friendly during my initial programming days and my best
 bet was copy pasting expressions from stack overflow and then just hope they'd work.
@@ -56,14 +56,13 @@ code editor VS Code to test regex).
 Videos are my favorite ways to learn and understand stuffs. So here's some awesome regex video resources.
 
 - [How to match any pattern of text](https://www.youtube.com/watch?v=sa-TUpSx1JA) - A must watch video if you have
- any issues understanding regular expressions. This video also shows how you can use your code editor as your regex
- playground 😄
+  any issues understanding regular expressions. This video also shows how you can use your code editor as your regex
+  playground 😄
 - [Regex in 100 seconds](https://www.youtube.com/watch?v=sXQxhojSdZM) - If you have an extremely short span of patience
-  or just want to get a brief high level overview of regex, then check out this video. (It is from my favorite tech 
+  or just want to get a brief high level overview of regex, then check out this video. (It is from my favorite tech
   youtuber. His videos are simply ❤️)
 
-
-I hope you found these resources helpful and start loving regular expressions 😄. I compiled all these resources for 
-my personal reference. I thought it would be a good resource to share with the community as well. 
+I hope you found these resources helpful and start loving regular expressions 😄. I compiled all these resources for
+my personal reference. I thought it would be a good resource to share with the community as well.
 
 Have a great one!

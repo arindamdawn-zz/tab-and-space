@@ -17,13 +17,16 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1 className="text-xl font-bold">{postData.title}</h1>
-        <Date dateString={postData.date} />
+        <header>
+          <h1 className="text-4xl leading-tight font-bold">{postData.title}</h1>
+          {postData.date && <Date dateString={postData.date} />}
+        </header>
         <ReactMarkdown
+          className="mt-8 text-lg leading-snug markdown"
           escapeHtml={false}
           source={postData.content}
           renderers={{ code: CodeBlock }}
-        />
+        ></ReactMarkdown>
       </article>
     </Layout>
   );
