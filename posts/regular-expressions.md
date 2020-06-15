@@ -1,6 +1,7 @@
 ---
-title: 'Awesome resources - Regular Expressions'
-date: '2020-06-15T14:17:13.150Z'
+title: 'Regular Expressions'
+description: 'A handy collection of awesome regex resources specially for javascript developers.'
+date: '2020-06-16T14:17:13.150Z'
 tags: ['javascript', 'general']
 draft: false
 ---

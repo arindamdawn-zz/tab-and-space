@@ -2,20 +2,20 @@ import Link from 'next/link';
 
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
+import Date from '../components/date';
 
-const Index = ({ title, description, posts }) => {
+const Index = ({ title, posts }) => {
   return (
     <Layout pageTitle={title}>
-      <main className="max-w-sm m-auto">
-        My posts
-        {posts.map(({ id, title, date, draft }) => {
+      <main className="mt-10">
+        {posts.map(({ id, title, date, description, draft }) => {
           return (
-            <div key={id}>
-              {!draft && (
-                <Link href="/posts/[id]" as={`/posts/${id}`}>
-                  <a>{title}</a>
-                </Link>
-              )}
+            <div key={id} className="mt-4">
+              <Link href="/posts/[id]" as={`/posts/${id}`}>
+                <a className="text-4xl font-bold leading-6">{title}</a>
+              </Link>
+              <p className="mt-2 text-lg">{description}</p>
+              <Date dateString={date} />
             </div>
           );
         })}

@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     <>
       <section className="layout">
         <Header />
-        <div className="content min-h-screen my-4 mx-4 max-w-xl mx-auto">{children}</div>
+        <div className="content min-h-screen my-4 max-w-2xl mx-auto">{children}</div>
       </section>
       <Footer>Built with love using next js</Footer>
     </>
