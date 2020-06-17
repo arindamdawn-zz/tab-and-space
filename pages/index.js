@@ -1,25 +1,23 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import Layout from '../components/layout';
-import { getSortedPostsData } from '../lib/posts';
-import Date from '../components/date';
+import Layout from "../components/layout";
+import { getSortedPostsData } from "../lib/posts";
+import Date from "../components/date";
 
 const Index = ({ title, posts }) => {
   return (
     <Layout pageTitle={title}>
-      <main className="mt-10">
-        {posts.map(({ id, title, date, description, draft }) => {
-          return (
-            <div key={id} className="mt-4">
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
-                <a className="text-4xl font-bold leading-6">{title}</a>
-              </Link>
-              <p className="mt-2 text-lg">{description}</p>
-              <Date dateString={date} />
-            </div>
-          );
-        })}
-      </main>
+      {posts.map(({ id, title, date, description, draft }) => {
+        return (
+          <div key={id} className="mt-4">
+            <Link href="/posts/[id]" as={`/posts/${id}`}>
+              <a className="text-2xl md:text-4xl font-bold leading-6">{title}</a>
+            </Link>
+            <p className="mt-2 text-lg">{description}</p>
+            <Date dateString={date} />
+          </div>
+        );
+      })}
     </Layout>
   );
 };

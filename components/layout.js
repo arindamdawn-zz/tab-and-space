@@ -1,13 +1,14 @@
 import Header from './header';
 import Footer from './footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageTitle }) => {
   return (
     <>
-      <section className="layout">
-        <Header />
-        <div className="content min-h-screen my-4 max-w-2xl mx-auto">{children}</div>
-      </section>
+      <Header />
+      <main className="content min-h-screen mx-auto pt-10 max-w-xs md:max-w-2xl">
+        {children}
+      </main>
+
       <Footer>Built with love using next js</Footer>
     </>
   );

@@ -5,5 +5,7 @@
   "tailwindCSS.emmetCompletions": true,
   "files.exclude": {
     "**/node_modules": true
-  }
+  },
+  "deno.enable": false,
+  "javascript.validate.enable": false
 }
