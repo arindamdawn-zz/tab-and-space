@@ -22,6 +22,7 @@ export default function Post({ postData }) {
             {postData.title}
           </h1>
           {postData.date && <Date dateString={postData.date} />}
+          <p>Time to read: {postData.readingTime.humanizedDuration}</p>
         </header>
         <ReactMarkdown
           className="mt-8 text-lg leading-snug markdown"

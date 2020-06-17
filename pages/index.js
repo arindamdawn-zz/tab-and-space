@@ -7,14 +7,17 @@ import Date from "../components/date";
 const Index = ({ title, posts }) => {
   return (
     <Layout pageTitle={title}>
-      {posts.map(({ id, title, date, description, draft }) => {
+      {posts.map(({ id, title, date, description, draft, readingTime }) => {
         return (
           <div key={id} className="mt-4">
             <Link href="/posts/[id]" as={`/posts/${id}`}>
-              <a className="text-2xl md:text-4xl font-bold leading-6">{title}</a>
+              <a className="text-2xl md:text-4xl font-bold leading-6">
+                {title}
+              </a>
             </Link>
             <p className="mt-2 text-lg">{description}</p>
             <Date dateString={date} />
+            <p>Time to read: {readingTime.humanizedDuration}</p>
           </div>
         );
       })}
