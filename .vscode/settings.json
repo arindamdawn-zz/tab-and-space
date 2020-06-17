@@ -7,5 +7,12 @@
     "**/node_modules": true
   },
   "deno.enable": false,
-  "javascript.validate.enable": false
+  "javascript.validate.enable": false,
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "latex",
+    "plaintext"
+  ]
 }
