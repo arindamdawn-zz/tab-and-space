@@ -103,21 +103,21 @@ which then prints the message to the console.
 Deno also provides a neat API that can be called using Deno.metrics(). It provides stats from the Rust side of Deno
 about the information of the operations that took place. Something like this:
  > console.table(Deno.metrics())
- ┌─────────────────────────┬────────┐
- │         (index)         │ Values │
- ├─────────────────────────┼────────┤
- │      opsDispatched      │   3    │
- │    opsDispatchedSync    │   2    │
- │   opsDispatchedAsync    │   1    │
- │ opsDispatchedAsyncUnref │   0    │
- │      opsCompleted       │   3    │
- │    opsCompletedSync     │   2    │
- │    opsCompletedAsync    │   1    │
- │ opsCompletedAsyncUnref  │   0    │
- │    bytesSentControl     │   73   │
- │      bytesSentData      │   0    │
- │      bytesReceived      │  375   │
- └─────────────────────────┴────────┘
+
+|   (index)     |       Values       |
+|---------------|--------------------|
+|   opsDispatched           |    3   |
+|   opsDispatchedSync       |    2   |
+|   opsDispatchedAsync      |    1   |
+|  opsDispatchedAsyncUnref  |    0   |
+|  opsCompleted             |    3   |
+|  opsCompletedSync         |    2   |
+|  opsCompletedAsync        |    1   |
+|  opsCompletedAsyncUnref   |    0   |
+|  bytesSentControl         |    73  |
+|  bytesSentData            |    0   |
+|  bytesReceived            |    375 |
+
 
 This is a very simplified version of the data communication happens in Deno. There are lots of other things to talk
 about Deno regarding its great features which I can probably share in another post with some more real-life examples. 
