@@ -6,9 +6,7 @@ tags: ['javascript']
 draft: false
 ---
 
-Javascript is amazing but it has some gotchas which can be a bit unusual to someone new to the language. I have
-often been confused while dealing with some of them so would like to share some of the many quirks that exist in
-javascript. 
+Javascript is amazing but it has some gotchas which can be a bit unusual to someone new to the language. I have often been confused while dealing with some of them so would like to share some of the many quirks that exist in javascript. 
 
 Here are some examples. Enjoy!
 
@@ -120,16 +118,15 @@ Number.parseFloat(' 123.4#') // 123.4
 These are some of the many other gotchas that are there in javascript. I would like to share some of the others in 
 some other post. 
 I often have this imposter's syndrome(in a good way) that makes me feel that I am very incompetent in JavaScript and
-I start exploring the basics from scratch. It helps me unlearn and re-learn the features of this amazing languaage 
-and be a better JavaScript craftsman and sharpen some programming skills. 
-Hopefully someday I will be able to know all the knitty gritty details of this language 😄
+I start exploring the basics from scratch. It helps me unlearn and re-learn the features of this amazing language and be a better JavaScript craftsman and sharpen some programming skills. 
+Hopefully, someday I will be able to know all the Knitty gritty details of this language 😄
 
-# My favorite javascript resources
+# My favourite javascript resources
 
-As a sidenote I would like to share the places I like to visit again and again to attain some wisdom each time
+As a side note, I would like to share the places I like to visit again and again to attain some wisdom each time
 
 - [2ality](https://2ality.com/) - I personally feel is one of the best blogs on JavaScript (ECMAScript).
-- [ExploringJs](https://exploringjs.com/) - Maintained by Dr. Axel Rauschmayer of 2ality. Phenomenal books
+- [ExploringJs](https://exploringjs.com/) - Maintained by Dr Axel Rauschmayer of 2ality. Phenomenal books
 - [Javascript.info](https://javascript.info/) - Very well maintained and documented
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) - Very robust and highly informative
 
