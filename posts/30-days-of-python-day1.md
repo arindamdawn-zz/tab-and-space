@@ -32,7 +32,7 @@ as a helpful resource to anyone looking to learn the language as well 🙂
 
 I found this great video where the founder himself shares a brief story about the language.
 
-[![The Story of Python, by Its Creator, Guido van Rossum](http://img.youtube.com/vi/J0Aq44Pze-w/0.jpg)](http://www.youtube.com/watch?v=J0Aq44Pze-w "The Story of Python, by Its Creator, Guido van Rossum")
+[![The Story of Python, by Its Creator, Guido van Rossum](https://img.youtube.com/vi/J0Aq44Pze-w/0.jpg)](https://www.youtube.com/watch?v=J0Aq44Pze-w "The Story of Python, by Its Creator, Guido van Rossum")
 
 ## Understanding about how Python works in simple words
 
