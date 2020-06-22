@@ -1,12 +1,12 @@
 ---
 title: '30 Days of Python 👨‍💻 - Day 1'
-description: "A javascript developer's quest to learn python in a month."
+description: "A JavaScript developer's quest to learn python in a month."
 date: '2020-06-21T16:56:50.516Z'
-tags: ['python']
+tags: ['python', 'challenge']
 draft: false
 ---
 
-As a web developer fiddling around with javascript most of the time, I wanted to explore the territories of a different
+As a web developer fiddling around with JavaScript most of the time, I wanted to explore the territories of a different
 language and document the learning journey in the process. I decided to learn Python, one of the most loved and popular languages, something which had been in my wishlist for a while. It would be really nice I believe to explore the new possibilities that Python is so widely recognized for such as Data Science, Machine Learning etc.
 
 I decided to split the learning roadmap in 4 weeks with each week dedicated to learning some specific areas of the language. As a developer, I know it is quite impossible to master a language in such a short span but a daily deliberate practice routine for the same duration is sufficient to start building interesting projects and build the foundations.
@@ -37,7 +37,7 @@ I found this great video where the founder himself shares a brief story about th
 ## Understanding about how Python works in simple words
 
 Python is a high-level programming interpreted programming language.
-What it means is that the python code needs to translate (interpreted) by another software program which is called the interpreter that executes the code line by line and converts it into bytecode (very close to machine-readable code). 
+What it means is that the python code needs to be translated (interpreted) by another software program which is called the interpreter that executes the code line by line and converts it into bytecode (very close to machine-readable code). 
 This bytecode is run by the Python virtual machine (gets installed when we install python) and then converted into 
 machine-readable binary code which computers can process and perform the necessary action.
 
@@ -60,14 +60,14 @@ v3 and support for v2 would be ceased after 2020.
 
 To keep things extremely simple at first, I wanted to play around with some basic **hello world** type code, to begin with.
 I used the amazing online playground [REPL](https://repl.it) to kickstart writing some python code and do a syntax
-comparison with javascript as well.
+comparison with JavaScript as well.
 
 ```python
 name = input('What is your name?') #promts user input in console and store in a variable
 print('Welcome to the world of Python ' + name) # prints to console 
 
 ```
-comparing it with javascript
+comparing it with JavaScript
 
 ```javascript
 const name = prompt('What is your name?');
