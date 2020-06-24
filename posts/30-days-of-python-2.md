@@ -6,7 +6,7 @@ tags: ['python', 'challenge']
 draft: false
 ---
 
-Before diving deep into the Knitty-gritty details of a programming language or perhaps even a human language, we need
+Before diving deep into the nitty-gritty details of a programming language or perhaps even a human language, we need
 to understand its terminologies and basic principles and start building a basic mental model which we can come back and
 refer whenever needed.
 
