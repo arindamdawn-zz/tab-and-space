@@ -1,5 +1,5 @@
 ---
-title: '30 Days of Python 👨‍💻 - Day 5'
+title: '30 Days of Python 👨‍💻 - Day 5 - Conditions & Loops I'
 description: "A JavaScript developer's quest to learn python in a month."
 date: '2020-06-25T16:56:50.516Z'
 tags: ['python', 'challenge']

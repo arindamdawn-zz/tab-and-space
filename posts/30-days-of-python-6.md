@@ -1,5 +1,5 @@
 ---
-title: '30 Days of Python 👨‍💻 - Day 6'
+title: '30 Days of Python 👨‍💻 - Day 6 - Loops II & Functions'
 description: "A JavaScript developer's quest to learn python in a month."
 date: '2020-06-26T16:56:50.516Z'
 tags: ['python', 'challenge']

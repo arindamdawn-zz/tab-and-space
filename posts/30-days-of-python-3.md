@@ -1,5 +1,5 @@
 ---
-title: '30 Days of Python 👨‍💻 - Day 3'
+title: '30 Days of Python 👨‍💻 - Day 3 - Data Types II'
 description: "A JavaScript developer's quest to learn python in a month."
 date: '2020-06-23T16:56:50.516Z'
 tags: ['python', 'challenge']
