@@ -147,7 +147,7 @@ print(Calculator.multiply(3,5)) # 15
 That's it for today. I will be covering and exploring the principles of object-oriented programming in detail and practise some exercises in the process of understanding the concepts. The mental model is being developed slowly and steadily to tackle more advanced topics in the upcoming days. Hope you are finding it interesting as well.
 
 I am currently watching this interesting Q & A video with the founder of Python. Thought of sharing it as well :)
-[![Python creator Guido van Rossum](http://img.youtube.com/vi/7kn7NtlV6g0/0.jpg)](http://www.youtube.com/watch?v=7kn7NtlV6g0 "Creator of Python Programming Language, Guido van Rossum")
+[![Python creator Guido van Rossum](https://img.youtube.com/vi/7kn7NtlV6g0/0.jpg)](http://www.youtube.com/watch?v=7kn7NtlV6g0 "Creator of Python Programming Language, Guido van Rossum")
 
 Keep Coding. Let me know your thoughts.
 
