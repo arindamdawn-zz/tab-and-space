@@ -45,7 +45,7 @@ The above code checks for two conditions in a single expression to execute the b
 
 ## Indentation
 
-Indentation is the way to separate lines of code using spaces/tabs so that the interpreter can distinguish code blocks and execute the code accordingly. Python does not use any braces unlike JavaScript and instead uses indentation to chunk blocks of code. The code editors makes our life easy by automatically doing the indentation. The online editor [Repl](https://repl.it/) that I am using as a playground also does that.
+Indentation is the way to separate lines of code using spaces/tabs so that the interpreter can distinguish code blocks and execute the code accordingly. Python does not use any braces unlike JavaScript and instead uses indentation to chunk blocks of code. The code editors make our life easy by automatically doing the indentation. The online editor [Repl](https://repl.it/) that I am using as a playground also does that.
 
 ```python
 if(10 > 8):
@@ -99,7 +99,7 @@ else:
 
 ## Ternary Operator
 
-While going through the syntax of ternary operator in Python, I found it a bit confusion initially but then found it quite easy to read compared to the one I am familiar with in my JavaScript world
+While going through the syntax of the ternary operator in Python, I found it a bit confusing initially but then found it quite easy to read compared to the one I am familiar with in my JavaScript world
 
 ```python
 is_single = True
@@ -110,9 +110,9 @@ print(message) # You can date
 
 Ternary operator is also sometimes called a **conditional expression**. It is a very handy way to checking a condition in a single statement. I compared it with the `?` operator syntax of JavaScript to solidify my mental model.
 
-## Short Circuiting
+## Short-Circuiting
 
-While checking for multiple logical conditions in a single statement, the interpreter is smart enough to to ignore the rest of the condition check if the first condition fails. This is known as short circuiting. It can be better explained using an example
+While checking for multiple logical conditions in a single statement, the interpreter is smart enough to to ignore the rest of the condition check if the first condition fails. This is known as short-circuiting. It can be better explained using an example
 
 ```python
 knows_javascript = True
@@ -176,7 +176,7 @@ print([] is []) # False
 
 ## For Loops
 
-Loops allows to run a block of code multiple number of times. In Python, the basic form of loop is a `for` loop which can loop over an **iterable.**
+Loops allow to run a block of code multiple number of times. In Python, the basic form of loop is a `for` loop which can loop over an **iterable.**
 
 ```python
 for item in 'Python': # String is iterable
@@ -185,10 +185,10 @@ for item in 'Python': # String is iterable
 for item in [1,2,3,4,5]: # List is iterable
 	print(item) # prints all numbers one at a time
 
-for item in {1,2,3,4,5} # Set is iterable
+for item in {1,2,3,4,5}: # Set is iterable
 	print(item)
 
-for item in (1,2,3,4,5) # Tuple is iterable
+for item in (1,2,3,4,5): # Tuple is iterable
 	print(item)
 
 ```
@@ -222,19 +222,19 @@ for key, value in player.items():
 
 ## range
 
-`range`is an iterable object in Python used to generate a range of numbers. It is commonly used in loops and to generate a list. Range accepts 3 input parameters start, stop and step over with 2nd and 3rd optional
+`range` is an iterable object in Python used to generate a range of numbers. It is commonly used in loops and to generate a list. Range accepts 3 input parameters start, stop and step over with 2nd and 3rd optional
 
 ```python
 for item in range(10):
   print('python') # prints python 10 times
 
-for item in range(0,10,1)
+for item in range(0,10,1):
 	print('hello') # prints hello 10 times
 
-for item in range(0, 10, 2)
+for item in range(0, 10, 2):
 	print('hii') # prints hii 5 times 
 
-for item in range(10, 0, -1)
+for item in range(10, 0, -1):
 	print(item) # prints in reverse order
 
 print(list(range(10))) # generates a list of 10 items
@@ -249,7 +249,7 @@ for key, value in enumerate(range(10)): # using unpacking techique
   print(f'key is {key} and value is {value}') # prints key and value at the same time
 ```
 
-That's all for today. Will cover up the remaining parts of loops and functions to finish of with the Python fundamentals.
+That's all for today. Will cover up the remaining parts of loops and functions to finish off with the Python fundamentals.
 
 Another day spent well 😄 Another small step taken towards my goal of learning Python. 
 

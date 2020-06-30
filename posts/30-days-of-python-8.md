@@ -136,7 +136,7 @@ class Calculator:
   def __init__(self,type):
     self.type = type
 
-  @classmethod
+  @staticmethod
   def multiply(num1, num2): 
 		return num1 * num2
 	# cls is just like self which needs to passed as 1st parameter
