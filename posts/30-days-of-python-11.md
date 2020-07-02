@@ -35,7 +35,7 @@ print(doubler(5))
 ```
 
 ```python
-def emojifier_appender(list, emoji):
+def emoji_appender(list, emoji):
   '''
   Accepts a list and a emoji and 
   appends to every item of list
@@ -45,8 +45,8 @@ def emojifier_appender(list, emoji):
     new_list.append(str(item) + emoji)
   return new_list
 
-print(emojifier_appender([1,2,3], '😀')) # ['1😀', '2😀', '3😀']
-print(emojifier_appender(['alpha','beta','gamma'], '😀')) 
+print(emoji_appender([1,2,3], '😀')) # ['1😀', '2😀', '3😀']
+print(emoji_appender(['alpha','beta','gamma'], '😀')) 
 # ['alpha😀', 'beta😀', 'gamma😀']
 ```
 
