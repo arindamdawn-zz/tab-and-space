@@ -1,7 +1,7 @@
 ---
 title: '30 Days of Python 👨‍💻 - Day 11 - Functional Programming I'
 description: "A JavaScript developer's quest to learn python in a month."
-date: '2020-07-1T16:56:50.516Z'
+date: '2020-07-01T05:39:16.196Z'
 tags: ['python', 'challenge']
 draft: false
 ---
@@ -85,10 +85,10 @@ color_to_remove = 'red'
 
 colors = ['blue', 'green', 'black', 'red']
 
-def search_color(color):
+def remove_color(color):
   return color != color_to_remove
 
-result = filter(search_color, colors)
+result = filter(remove_color, colors)
 
 print(list(result)) # ['blue', 'green', 'black']
 print(colors) # ['blue', 'green', 'black', 'red'] (Unmodified)
