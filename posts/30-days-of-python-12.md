@@ -1,5 +1,5 @@
 ---
-title: '30 Days of Python 👨‍💻 - Day 12 - Functional Programming II'
+title: '30 Days of Python 👨‍💻 - Day 12 - Lambda Expression & Comprehensions'
 description: "A JavaScript developer's quest to learn python in a month."
 date: '2020-07-02T05:39:16.196Z'
 tags: ['python', 'challenge']
