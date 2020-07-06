@@ -1,13 +1,18 @@
-import Head from "next/head";
-import ReactMarkdown from "react-markdown/with-html";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import Head from 'next/head';
+import ReactMarkdown from 'react-markdown/with-html';
+import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import  theme  from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
 
-import Layout from "../../components/layout";
-import Date from "../../components/date";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import Layout from '../../components/layout';
+import Date from '../../components/date';
+import { getAllPostIds, getPostData } from '../../lib/posts';
 
 const CodeBlock = ({ language, value }) => {
-  return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
+  return (
+    <SyntaxHighlighter language={language} style={theme}>
+      {value}
+    </SyntaxHighlighter>
+  );
 };
 
 export default function Post({ postData }) {
@@ -29,8 +34,7 @@ export default function Post({ postData }) {
           escapeHtml={false}
           source={postData.content}
           renderers={{ code: CodeBlock }}
-        >
-        </ReactMarkdown>
+        ></ReactMarkdown>
       </article>
     </Layout>
   );
