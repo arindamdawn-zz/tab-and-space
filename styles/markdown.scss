@@ -69,7 +69,7 @@
       h2 {
         font-size: 24px;
         border-bottom: 1px solid #cccccc;
-        color: black;
+        color: currentColor;
       }
       
       h3 {
@@ -329,8 +329,8 @@
         margin: 0 2px;
         padding: 0 5px;
         white-space: nowrap;
-        border: 1px solid #eaeaea;
-        background-color: #f8f8f8;
+        border: 1px solid #a3a3a3;
+        background-color: #333333;
         border-radius: 3px;
       }
       
@@ -339,7 +339,7 @@
         padding: 0;
         white-space: pre;
         border: none;
-        background: transparent;
+        background: #333333;
         font-size: 1rem;
       }
       

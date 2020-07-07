@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import Layout from "../components/layout";
-import { getSortedPostsData } from "../lib/posts";
-import Date from "../components/date";
+import Layout from '../components/layout';
+import { getSortedPostsData } from '../lib/posts';
+import Date from '../components/date';
 
 const Index = ({ title, posts }) => {
   return (
@@ -11,13 +11,13 @@ const Index = ({ title, posts }) => {
         return (
           <div key={id} className="mt-4">
             <Link href="/posts/[id]" as={`/posts/${id}`}>
-              <a className="text-2xl md:text-4xl font-bold leading-6">
+              <a className="text-2xl md:text-3xl font-bold leading-10 text-gray-300">
                 {title}
               </a>
             </Link>
-            <p className="mt-2 text-lg">{description}</p>
-            <Date dateString={date} />
-            <p>Time to read: {readingTime.humanizedDuration}</p>
+            <p className="mt-2 text-lg text-gray-400">{description}</p>
+            <Date dateString={date} className="text-gray-400" />
+            <p className="text-purple-400">Time to read: {readingTime.humanizedDuration}</p>
           </div>
         );
       })}

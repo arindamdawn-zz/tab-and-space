@@ -23,14 +23,14 @@ export default function Post({ postData }) {
       </Head>
       <article>
         <header>
-          <h1 className="text-2xl leading-tight font-bold md:text-4xl">
+          <h1 className="text-2xl leading-tight font-bold md:text-3xl text-gray-300">
             {postData.title}
           </h1>
-          {postData.date && <Date dateString={postData.date} />}
-          <p>Time to read: {postData.readingTime.humanizedDuration}</p>
+          {postData.date && <Date dateString={postData.date} className="text-gray-400 inline-block mt-4"/>}
+          <p className="text-purple-400">Time to read: {postData.readingTime.humanizedDuration}</p>
         </header>
         <ReactMarkdown
-          className="mt-8 text-lg leading-snug markdown"
+          className="mt-8 text-lg leading-snug markdown text-gray-400"
           escapeHtml={false}
           source={postData.content}
           renderers={{ code: CodeBlock }}
