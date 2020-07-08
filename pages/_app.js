@@ -4,6 +4,7 @@ import * as gtag from '../lib/gtag';
 
 import '../styles/index.css';
 import '../styles/markdown.scss';
+import '../styles/custom.scss';
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
