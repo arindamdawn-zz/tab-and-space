@@ -129,13 +129,19 @@
         margin-top: 0;
       }
       
-      li p.first {
-        display: inline-block;
+      li {
+        position: relative;
+        list-style: none;
+        padding-left: 20px;
       }
-      
-      ul, ol {
-        padding-left: 30px;
+      li:before {
+        content: "*";
+        position: absolute;
+        left: -5px;
+        top: -3px;
+        font-size: 2rem;
       }
+   
       
       ul :first-child, ol :first-child {
         margin-top: 0;
@@ -184,8 +190,9 @@
       
       blockquote {
         border-left: 4px solid #dddddd;
-        padding: 0 15px;
-        color: #777777;
+        padding: 10px 15px;
+        background-color: #CF0134;
+        color: #dddddd;
       }
       
       blockquote > :first-child {
@@ -198,16 +205,17 @@
       
       table {
         padding: 0;
+        width: 100%;
       }
       table tr {
         border-top: 1px solid #cccccc;
-        background-color: white;
+        background-color: #3C4142;
         margin: 0;
         padding: 0;
       }
       
       table tr:nth-child(2n) {
-        background-color: #f8f8f8;
+        background-color: #000133;
       }
       
       table tr th {
@@ -330,7 +338,7 @@
         padding: 0 5px;
         white-space: nowrap;
         border: 1px solid #a3a3a3;
-        background-color: #333333;
+        background-color: #4B006E;
         border-radius: 3px;
       }
       
