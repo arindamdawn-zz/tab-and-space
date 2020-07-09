@@ -5,7 +5,6 @@ date: '2020-07-03T05:39:16.196Z'
 tags: ['python', 'challenge']
 draft: false
 ---
-
 Today I explored an interesting topic, Decorators. I did apply a couple of decorators while trying out Object-Oriented Programming in Python such as `@classmethod` and `@staticmethod`, however, I did not go through them in details back then.
 
 Decorators are a programming pattern. Decorators are simply **functions in disguise**. 
@@ -42,13 +41,15 @@ A function is called a **higher-order function** when :
 - Both
 
 ```python
-def logger(func): # higher order function
-  print(f'The result of the passed function is {func}')
+def logger(func, args):  # higher order function
+    print(f'The result of the passed function is {func(*args)}')
+
 
 def sum(num1, num2):
-  return num1 + num2
+    return num1 + num2
 
-logger(sum(1,5))
+
+logger(sum, (1, 5))
 ```
 
 ```python

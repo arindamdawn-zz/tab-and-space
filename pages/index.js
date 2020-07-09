@@ -24,7 +24,7 @@ const Index = ({ title, posts }) => {
                   })}
               </div>
               {/* <p className="mt-1 text-lg text-gray-400">{description}</p> */}
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 mt-1">
                 <Date dateString={date} className="text-gray-400" />
                 <p className="text-purple-400">
                   Time to read: {readingTime.humanizedDuration}

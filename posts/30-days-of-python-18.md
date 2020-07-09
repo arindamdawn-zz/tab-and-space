@@ -18,7 +18,7 @@ If you are interested to know more about these two file types [here is a great a
 
 Python provides a built-in function `open` to open any file. Any file first needs to be opened first to read data from it or write some data onto it. Reading data from a file is simple in Python. 
 
-I used [REPL](https://repl.it/) REPL as the playground to experiment with all the code-blocks provided in this article.
+I used [REPL](https://repl.it/) as the playground to experiment with all the code-blocks provided in this article.
 
 ## Opening Files
 

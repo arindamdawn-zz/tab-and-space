@@ -1,23 +1,20 @@
-import { useEffect } from 'react';
+import App from 'next/app'
 import Router from 'next/router';
-import * as gtag from '../lib/gtag';
+import { initGA, logPageView } from '../utils/analytics';
 
 import '../styles/index.css';
 import '../styles/markdown.scss';
 import '../styles/custom.scss';
 
-const App = ({ Component, pageProps }) => {
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      gtag.pageview(url);
-    };
-    Router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      Router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, []);
+export default class MyApp extends App {
+  componentDidMount() {
+    initGA()
+    logPageView()
+    Router.events.on('routeChangeComplete', logPageView)
+  }
 
-  return <Component {...pageProps} />;
-};
-
-export default App;
+  render() {
+    const { Component, pageProps } = this.props
+    return <Component {...pageProps} />
+  }
+}

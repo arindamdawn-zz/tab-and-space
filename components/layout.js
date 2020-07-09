@@ -5,8 +5,8 @@ const Layout = ({ children, pageTitle }) => {
   return (
     <>
       <Header />
-      <main className="container bg-gray-900 max-w-full pb-8">
-        <div className="min-h-screen mx-auto pt-10 max-w-sm md:max-w-2xl">
+      <main className="container bg-gray-900 max-w-full pb-8 break-words">
+        <div className="min-h-screen mx-auto py-6 px-2 max-w-sm md:max-w-2xl">
           {children}
         </div>
       </main>
