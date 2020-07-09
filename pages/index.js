@@ -20,10 +20,10 @@ const Index = ({ title, posts }) => {
                 {tags &&
                   tags.map((tag) => {
                     const classes = `inline-block rounded mr-2 mt-1 text-xs font-bold text-gray-300 bg-orange-700 px-2 py-1 tag-${tag}`;
-                    return <div className={classes}>#{tag}</div>;
+                    return <div className={classes} key={tag}>#{tag}</div>;
                   })}
               </div>
-              <p className="mt-1 text-lg text-gray-400">{description}</p>
+              {/* <p className="mt-1 text-lg text-gray-400">{description}</p> */}
               <div className="flex space-x-4">
                 <Date dateString={date} className="text-gray-400" />
                 <p className="text-purple-400">

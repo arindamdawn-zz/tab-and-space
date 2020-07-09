@@ -26,7 +26,7 @@ I created a `test.txt` file with some dummy content for testing.
 
 `test.txt`
 
-```
+```text
 # test.txt
 I am learning python.
 ```
@@ -199,7 +199,7 @@ Will create a file named `quote.txt` and fill it with an inspiring quote:
 
 `quote.txt`
 
-```
+```text
 If you can't make it good, at least make it look good. - Bill Gates
 ```
 
