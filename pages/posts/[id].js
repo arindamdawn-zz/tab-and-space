@@ -9,7 +9,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 
 const CodeBlock = ({ language, value }) => {
   return (
-    <SyntaxHighlighter language={language} style={theme}>
+    <SyntaxHighlighter language={language || 'text'} style={theme}>
       {value}
     </SyntaxHighlighter>
   );
@@ -30,7 +30,11 @@ export default function Post({ postData }) {
             {postData.tags &&
               postData.tags.map((tag) => {
                 const classes = `inline-block rounded mr-2 mt-2 text-xs font-bold text-gray-300 bg-orange-700 px-2 py-1 tag-${tag}`;
-                return <div className={classes} key={tag}>#{tag}</div>;
+                return (
+                  <div className={classes} key={tag}>
+                    #{tag}
+                  </div>
+                );
               })}
           </div>
           {postData.date && (

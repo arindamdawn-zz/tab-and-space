@@ -28,7 +28,7 @@ Here are some cool regex resources specific to Python
 
 To use regular expressions in Python, a built-in module `re` needs to be imported. This module comes with several methods for using regex.
 
-```
+
 |       Function       |                           Description                          |
 |:--------------------:|:--------------------------------------------------------------:|
 | re.search            | Check if given pattern is present anywhere in input string     |
@@ -50,7 +50,7 @@ To use regular expressions in Python, a built-in module `re` needs to be importe
 |                      | portion matched by pattern outside group won’t be in output    |
 | re.finditer          | iterator with re.Match object for each match                   |
 | re.subn              | gives tuple of modified string and number of substitutions     |
-```
+
 
 ## Code Exercises
 
