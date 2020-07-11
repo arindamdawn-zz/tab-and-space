@@ -1,5 +1,5 @@
 ---
-title: '30 Days of Python 👨‍💻 - Day 19 - Debugging and Testing'
+title: '30 Days of Python 👨‍💻 - Day 20 - Debugging and Testing'
 description: "A JavaScript developer's quest to learn python in a month."
 date: '2020-07-10T06:39:16.196Z'
 tags: ['python', 'challenge']
