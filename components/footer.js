@@ -27,7 +27,7 @@ const Footer = () => {
         <a href="http://github.com/arindamdawn" target="_blank" rel="noopener noreferrer">
           <Github width="22" height="22" />
         </a>
-        <a href="http://linkedin.com/arindamdawn" target="_blank" rel="noopener noreferrer">
+        <a href="http://linkedin.com/in/arindamdawn" target="_blank" rel="noopener noreferrer">
           <LinkedIn width="22" height="22" />
         </a>
         <a href="http://twitter.com/arindam_dawn" target="_blank" rel="noopener noreferrer">
