@@ -1,10 +1,24 @@
 // tags
-.tag-python{background-color: #048243;}
-.tag-javascript{background-color: #247AFD;}
-.tag-deno{background-color: #0CB577;}
-.tag-regex{background-color: #6C3461;}
-.tag-challenge{background-color: #F5054F;}
+.tag-python {
+  background-color: #048243;
+}
+.tag-javascript {
+  background-color: #247afd;
+}
+.tag-deno {
+  background-color: #0cb577;
+}
+.tag-regex {
+  background-color: #6c3461;
+}
+.tag-challenge {
+  background-color: #f5054f;
+}
 
 // reading progress
-progress::-webkit-progress-value { background: #9900FA; }
-progress::-moz-progress-bar { background: #9900FA; }
+progress::-webkit-progress-value {
+  background: #9900fa;
+}
+progress::-moz-progress-bar {
+  background: #9900fa;
+}

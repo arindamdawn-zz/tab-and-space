@@ -11,7 +11,7 @@ const Layout = ({ children, pageTitle, showProgress }) => {
         </div>
       </main>
 
-      <Footer>Built with love using next js</Footer>
+      <Footer />
     </>
   );
 };
