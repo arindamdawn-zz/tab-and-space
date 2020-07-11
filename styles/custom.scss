@@ -4,3 +4,7 @@
 .tag-deno{background-color: #0CB577;}
 .tag-regex{background-color: #6C3461;}
 .tag-challenge{background-color: #F5054F;}
+
+// reading progress
+progress::-webkit-progress-value { background: #9900FA; }
+progress::-moz-progress-bar { background: #9900FA; }

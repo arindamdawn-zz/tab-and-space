@@ -16,8 +16,9 @@ const CodeBlock = ({ language, value }) => {
 };
 
 export default function Post({ postData }) {
+
   return (
-    <Layout>
+    <Layout showProgress={true}>
       <Head>
         <title>{postData.title}</title>
       </Head>

@@ -290,6 +290,8 @@ Here are some great resources to understand and explore more on unit testing in 
 - [https://www.geeksforgeeks.org/unit-testing-python-unittest/](https://www.geeksforgeeks.org/unit-testing-python-unittest/)
 - [https://www.datacamp.com/community/tutorials/unit-testing-python](https://www.datacamp.com/community/tutorials/unit-testing-python)
 - [https://docs.python.org/3/library/unittest.html](https://docs.python.org/3/library/unittest.html) (Official Docs)
+- [Setup Tests in PyCharm](https://www.youtube.com/watch?time_continue=68&v=-VzJvNLooj4&feature=emb_logo) (Video)
+- [Unit Testing in VSCode](https://code.visualstudio.com/docs/python/testing)
 
 I hope I was able to explain in brief the benefits and use cases of debugging and testing Python code. The more we start testing and debugging, the more we start knowing about the language and write better code. 
 
