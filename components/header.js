@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import ReadingProgress from './readingProgress';
-import TabAndSpaceLogo from '../svgs/tabandspace.svg/';
+import TabAndSpaceLogo from '../svgs/tabandspace.svg';
 
 const Header = ({ showProgress }) => {
   return (
