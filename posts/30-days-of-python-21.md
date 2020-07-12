@@ -219,8 +219,18 @@ if __name__ == '__main__':
 
 On running `python pdf_watermarker.py`, it should generate the watermarked PDF file.
 
+There are a lot of things that can be done with PDFs. However, I simply decided to go through the basics to get my familiar with the process. I am linking some great resources to deep dive into PDF processing.
+
+Here are some references for processing PDFs in Python
+
+- [https://realpython.com/pdf-python/](https://realpython.com/pdf-python/)
+- [https://towardsdatascience.com/pdf-preprocessing-with-python-19829752af9f](https://towardsdatascience.com/pdf-preprocessing-with-python-19829752af9f)
+- [https://www.geeksforgeeks.org/working-with-pdf-files-in-python/](https://www.geeksforgeeks.org/working-with-pdf-files-in-python/)
+- [https://automatetheboringstuff.com/chapter13/](https://automatetheboringstuff.com/chapter13/)
+- [https://medium.com/@umerfarooq_26378/python-for-pdf-ef0fac2808b0](https://medium.com/@umerfarooq_26378/python-for-pdf-ef0fac2808b0)
+
 All the associated code can be found in this [Github repo](https://github.com/arindamdawn/python-scripting)
 
-That's all for today. Will be exploring more on scripting such as building automated bots for twitter, sending email and other cool pieces of stuff tomorrow.
+That's all for today. Will be exploring more on scripting such as building automated bots for twitter, sending email and other cool stuffs tomorrow.
 
 Have a nice one!

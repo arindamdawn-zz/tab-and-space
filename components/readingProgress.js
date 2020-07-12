@@ -22,7 +22,7 @@ const ReadingProgress = ({...args }) => {
       value={readingProgress}
       {...args}
       className="w-full h-1 reading-progress"
-      style={{ position: 'relative', top: '-15px'}}
+      style={{ position: 'relative', top: '-2px'}}
     ></progress>
   );
 };
