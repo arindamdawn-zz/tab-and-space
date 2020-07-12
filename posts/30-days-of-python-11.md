@@ -1,5 +1,5 @@
 ---
-title: '30 Days of Python 👨‍💻 - Day 11 - Functional Programming I'
+title: '30 Days of Python 👨‍💻 - Day 11 - Functional Programming'
 description: "A JavaScript developer's quest to learn python in a month."
 date: '2020-07-01T05:39:16.196Z'
 tags: ['python', 'challenge']
