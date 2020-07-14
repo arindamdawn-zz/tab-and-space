@@ -190,6 +190,13 @@ if(__name__ == '__main__'):
     main()
 ```
 
+Now using this script, we don't even need to visit Hacker News and search for popular news. We can run this script from our console and get the latest news delivered. Feel free to tweak the script as per your needs and experiment with it or try scraping data from your own favourite website.
+
+We can possibly do a lot of things with the above data such as
+- Create an API to use it for an app of website
+- Use it for analysing trends using keywords
+- Create a news aggregator website and more
+
 ## Popular Scraping Libraries
 
 Beautiful Soup has its restrictions when related to scraping data from websites. It is quite simple to use but for scraping data from complex websites that are rendered at the client-side (Angular, React-based websites), the HTML markup won't be available when the website loads. To fetch data from such websites, more advanced libraries can be used. Here are some popular libraries and frameworks for Python.
@@ -204,7 +211,7 @@ Beautiful Soup has its restrictions when related to scraping data from websites.
 - [https://realpython.com/python-web-scraping-practical-introduction/](https://realpython.com/python-web-scraping-practical-introduction/)
 - [https://www.digitalocean.com/community/tutorials/how-to-scrape-web-pages-with-beautiful-soup-and-python-3](https://www.digitalocean.com/community/tutorials/how-to-scrape-web-pages-with-beautiful-soup-and-python-3)
 
-Web Scraping is a vast field. Beautiful Soup just scratches the surface. There are a whole lot of possibilities in this domain which I would explore while exploring more on data analysis with Python. Hopefully, I have been able to cover the basic concepts needed for further exploration.
+Web Scraping is a vast field. Using Beautiful Soup, we probably just scratched the surface. There are a whole lot of possibilities in this domain which I would explore while exploring more on data analysis with Python. Hopefully, I have been able to cover the basic concepts needed for further exploration.
 
 Tomorrow I shall be going over the concepts of Web Development with Python. 
 
