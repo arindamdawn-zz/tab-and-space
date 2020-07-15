@@ -236,7 +236,7 @@ print(colors.count('red')) # 1
 print(colors.index('orange')) # 1
 ```
 
-[Pyyhon tuple methods](https://www.w3schools.com/python/python_ref_tuple.asp)
+[Python tuple methods](https://www.w3schools.com/python/python_ref_tuple.asp)
 
 ## Sets
 

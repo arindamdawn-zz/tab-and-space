@@ -69,7 +69,7 @@ $ flask run
  * Running on http://127.0.0.1:5000/
 ```
 
-On opening the 'localhost' URL `[http://127.0.0.1:5000](http://127.0.0.1:5000)` we should see the content of the app. 
+On opening the 'localhost' URL `http://127.0.0.1:5000` we should see the content of the app. 
 
 To ensure that the server watches for changes made in the code, the Flask debug mode needs to be enabled like this
 
