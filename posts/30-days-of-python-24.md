@@ -44,7 +44,7 @@ After activating the virtual environment, the flask library can be installed. Th
 $ pip install flask
 ```
 
-Now we can test flask by building a simple server. I created a Python `[server.py](http://server.py)` to contain the server code.
+Now we can test flask by building a simple server. I created a Python `server.py` to contain the server code.
 
 `server.py`
 
@@ -78,7 +78,7 @@ $ export FLASK_ENV=development
 $ flask run
 ```
 
-Now the server does not need to be restarted after any changes made to the `[server.py](http://server.py)` file.
+Now the server does not need to be restarted after any changes made to the `server.py` file.
 
 ## Serving files using Flask
 
@@ -110,7 +110,7 @@ We can pass dynamic variables in the URL as `<variable>` and then render them in
 
 | string      | (default) accepts any text without a slash           |
 | int         | accepts positive integers                            |
-| float       | accepts positive floating point values               |
+| float       | accepts positive floating-point values               |
 | path        | like string but also accepts slashes                 |
 | uuid        | accepts UUID strings                                 |
 
@@ -138,6 +138,6 @@ I just mentioned very briefly about the basics of Web Development with Python. H
 
 The project's code can be found in this repo [https://github.com/arindamdawn/python-blog/tree/master](https://github.com/arindamdawn/python-blog/tree/master)
 
-That's all for today. Tomorrow, I will create the continue adding more features to this blog application while exploring more of Flask's concepts. I have used Flask to create the web app. Feel free to explore Django by consulting the documentation and try building simple apps with it as well.
+That's all for today. Tomorrow, I will continue adding more features to this blog application while exploring more of Flask's concepts. I have used Flask to create a web app. Feel free to explore Django by consulting the documentation and try building simple apps with it as well.
 
 Have a great one!
