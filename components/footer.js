@@ -14,8 +14,9 @@ const Footer = () => {
         with 🧡 using{' '}
         <a href="https://nextjs.org/" target="_blank">
           <NextJs
+            width="22"
+            height="22"
             style={{
-              width: '50px',
               display: 'inline-block',
               fontSize: '40px',
               position: 'relative',
