@@ -10,7 +10,7 @@ It is time to dig into some real Machine Learning and Data Science coding stuffs
 
 ## Working with Jupyter Notebooks
 
-I would like to provide reference to some cool resources to understand the Jupyter Notebook interface, installation guide and its workflow overview. 
+I would like to provide a reference to some cool resources to understand the Jupyter Notebook interface, installation guide and its workflow overview. 
 
 - [https://www.youtube.com/watch?v=HW29067qVWk](https://www.youtube.com/watch?v=HW29067qVWk) - Jupyter Notebook Tutorial Video
 - [https://jupyter.readthedocs.io/en/latest/install.html](https://jupyter.readthedocs.io/en/latest/install.html) - Installation guideline (It is recommended to install it using Anaconda toolkit as it comes with a lot of useful tools.)
@@ -41,7 +41,7 @@ The first and the most important thing for Machine Learning and Data Science is 
 
 I decided to search for a Netflix Shows data set and found this one from Kaggle - [https://www.kaggle.com/shivamb/netflix-shows](https://www.kaggle.com/shivamb/netflix-shows). It contains the data in a CSV format which will be used for this project. After downloading the file, it can be placed in the root directory of the project. I have named it `netflix_titles.csv`
 
-Since this data is in a kind of tabular format meaning it is arranged in rows and columns, [pandas](https://pandas.pydata.org) is a great open source library to process this kind of data and analyze it. It comes along with the Anaconda tooklit, so it can be used directly in the notebook.
+Since this data is in a kind of tabular format meaning it is arranged in rows and columns, [pandas](https://pandas.pydata.org) is a great open-source library to process this kind of data and analyze it. It comes along with the Anaconda toolkit, so it can be used directly in the notebook.
 
 
 ```python
@@ -772,7 +772,8 @@ df_all_ages.head()
 </table>
 </div>
 
+The Github repository for this notebook can be found [here](https://github.com/arindamdawn/jupyter_notebooks)
 
-That's all for today's post. Tomorrow will continue exploring more on the other steps of machine learning and data science and perform visual analysis of data by building charts and diagrams along with creating machine learning models.
+That's all for today's post. Tomorrow will continue exploring more on the other steps of machine learning and data science and perform a visual analysis of data by building charts and diagrams along with creating machine learning models.
 
 Have a great one!
