@@ -772,7 +772,11 @@ df_all_ages.head()
 </table>
 </div>
 
-The Github repository for this notebook can be found [here](https://github.com/arindamdawn/jupyter_notebooks)
+The Github repository for this notebook can be found [here](https://github.com/madewithml/basics/blob/4ad626098aca25db5628fe67895e738d5a5c2c2a/notebooks/03_Pandas.ipynb)
+
+## Resources:
+- [Great collection of Jupyter notebooks for learning](https://github.com/madewithml/basics/tree/4ad626098aca25db5628fe67895e738d5a5c2c2a/notebooks)
+- [Data Science cheatsheet](https://elitedatascience.com/python-cheat-sheet)
 
 That's all for today's post. Tomorrow will continue exploring more on the other steps of machine learning and data science and perform a visual analysis of data by building charts and diagrams along with creating machine learning models.
 
