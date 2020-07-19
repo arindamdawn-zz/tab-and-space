@@ -9,7 +9,9 @@ import Date from '../../components/date';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import { useState, useEffect } from 'react';
 
-
+const TableWrapper = ({ columnAlignment, children }) => {
+  return <div className="table-wrapper">{React.createElement('table', null, children)}</div>;
+};
 const CodeBlock = ({ language, value }) => {
   const [copyText, setCopyText] = useState('Copy');
   useEffect(() => {
@@ -74,7 +76,7 @@ export default function Post({ postData }) {
           className="mt-8 text-lg leading-snug markdown text-gray-400"
           escapeHtml={false}
           source={postData.content}
-          renderers={{ code: CodeBlock }}
+          renderers={{ code: CodeBlock, table: TableWrapper }}
         ></ReactMarkdown>
       </article>
     </Layout>
