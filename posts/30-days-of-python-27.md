@@ -12,13 +12,13 @@ It is time to dig into some real Machine Learning and Data Science coding stuffs
 
 I would like to provide a reference to some cool resources to understand the Jupyter Notebook interface, installation guide and its workflow overview. 
 
-- [https://www.youtube.com/watch?v=HW29067qVWk](https://www.youtube.com/watch?v=HW29067qVWk) - Jupyter Notebook Tutorial Video
-- [https://jupyter.readthedocs.io/en/latest/install.html](https://jupyter.readthedocs.io/en/latest/install.html) - Installation guideline (It is recommended to install it using Anaconda toolkit as it comes with a lot of useful tools.)
-- [https://jupyter.readthedocs.io/en/latest/index.html](https://jupyter.readthedocs.io/en/latest/index.html) - Documentation
+- [Jupyter Notebook Tutorial Video](https://www.youtube.com/watch?v=HW29067qVWk) - 
+- [Installation guideline](https://jupyter.readthedocs.io/en/latest/install.html) -  (It is recommended to install it using Anaconda toolkit as it comes with a lot of useful tools.)
+- [Documentation](https://jupyter.readthedocs.io/en/latest/index.html) - 
 
 Since I am a windows user, I would like to provide a quick to tip:
 
-> In windows, open Anaconda Prompt from start menu, navigate to the directory where you want to create jupyter projects, then run the command `jupyter notebook`. It will open up the notebook in the browser.
+> In windows, open Anaconda Prompt from the start menu, navigate to the directory where you want to create jupyter projects, then run the command `jupyter notebook`. It will open up the notebook in the browser.
 
 As per the basic steps of Machine Learning and Data Science, we shall be creating the project and create a readable notebook that documents the entire process which can then be shared with anyone.
 
@@ -51,24 +51,7 @@ data_frame.head(10) # show first 10 results
 # prints the data frame in as a table
 
 ```
-
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -294,19 +277,6 @@ data_frame.describe()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -389,19 +359,6 @@ data_frame[data_frame['country'] == 'India'].head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -512,19 +469,6 @@ data_frame.sort_values('release_year', ascending=False).head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -645,19 +589,6 @@ df_comedy_shows.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -715,19 +646,6 @@ df_all_ages.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -772,7 +690,7 @@ df_all_ages.head()
 </table>
 </div>
 
-The Github repository for this notebook can be found [here](https://github.com/madewithml/basics/blob/4ad626098aca25db5628fe67895e738d5a5c2c2a/notebooks/03_Pandas.ipynb)
+The Github repository for this notebook can be found [here](https://github.com/arindamdawn/jupyter_notebooks/blob/master/netflix_shows.ipynb)
 
 ## Resources:
 - [Great collection of Jupyter notebooks for learning](https://github.com/madewithml/basics/tree/4ad626098aca25db5628fe67895e738d5a5c2c2a/notebooks)

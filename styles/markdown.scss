@@ -63,7 +63,6 @@
       
       h1 {
         font-size: 28px;
-        color: black;
       }
       
       h2 {
@@ -206,6 +205,8 @@
       table {
         padding: 0;
         font-size: 0.85rem;
+        table-layout: fixed;
+        width: 100%;
       }
       table tr {
         border-top: 1px solid #cccccc;
