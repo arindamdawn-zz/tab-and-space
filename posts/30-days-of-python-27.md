@@ -51,7 +51,7 @@ data_frame.head(10) # show first 10 results
 # prints the data frame in as a table
 
 ```
-<div>
+<div class="table-wrapper">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -276,7 +276,7 @@ data_frame.describe()
 
 
 
-<div>
+<div class="table-wrapper">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -358,7 +358,7 @@ data_frame[data_frame['country'] == 'India'].head()
 
 
 
-<div>
+<div class="table-wrapper">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -468,7 +468,7 @@ data_frame.sort_values('release_year', ascending=False).head()
 
 
 
-<div>
+<div class="table-wrapper">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -588,7 +588,7 @@ df_comedy_shows.head()
 
 
 
-<div>
+<div class="table-wrapper">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -645,7 +645,7 @@ df_all_ages.head()
 
 
 
-<div>
+<div class="table-wrapper">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -699,3 +699,4 @@ The Github repository for this notebook can be found [here](https://github.com/a
 That's all for today's post. Tomorrow will continue exploring more on the other steps of machine learning and data science and perform a visual analysis of data by building charts and diagrams along with creating machine learning models.
 
 Have a great one!
+<h1>Hello</h1>

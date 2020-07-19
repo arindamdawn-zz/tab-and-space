@@ -201,11 +201,15 @@
       blockquote > :last-child {
         margin-bottom: 0;
       }
+
+      .table-wrapper{
+        width: 100%;
+        overflow-x: auto;
+      }
       
       table {
         padding: 0;
         font-size: 0.85rem;
-        table-layout: fixed;
         width: 100%;
       }
       table tr {
