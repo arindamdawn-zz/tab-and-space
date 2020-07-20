@@ -1,7 +1,7 @@
 ---
 title: '30 Days of Python 👨‍💻 - Day 26 - Machine Learning Basics'
 description: "A JavaScript developer's quest to learn python in a month."
-date: '2020-07-15T06:39:16.196Z'
+date: '2020-07-16T06:39:16.196Z'
 tags: ['python', 'challenge', 'machine-learning']
 draft: false
 ---

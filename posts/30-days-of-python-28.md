@@ -1,7 +1,7 @@
 ---
 title: '30 Days of Python 👨‍💻 - Day 28 - ML & Data Science II'
 description: "A JavaScript developer's quest to learn python in a month."
-date: '2020-08-15T06:39:16.196Z'
+date: '2020-08-18T06:39:16.196Z'
 tags: ['python', 'challenge', 'machine-learning']
 draft: false
 ---
@@ -12,7 +12,7 @@ Today I explored the [Scikit-Learn](https://scikit-learn.org/) library and creat
 
 Scikit-Learn is a popular Python library for Machine Learning. Scikit-Learn can process data provided to it and create machine learning models to learn patterns within the data and makes predictions using its tools.
 
-Why Scikit-learn
+## Why Scikit-learn?
 
 - Built on top of numpy and matplotlib libraries
 - Has tons of built-in machine learning models
