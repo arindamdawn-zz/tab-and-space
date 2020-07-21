@@ -2,17 +2,17 @@
 title: "30 Days of Python 👨‍💻 - Day 29 - Automation Testing"
 description: "A JavaScript developer's quest to learn python in a month."
 date: "2020-08-19T06:39:16.196Z"
-tags: ["python", "challenge", "machine-learning"]
+tags: ["python", "challenge"]
 draft: false
 ---
 
 Today I explored end-to-end Browser Automation Tests using Python by creating a basic automation testing project.
 
-When it comes to implementing browser automation, [Selenium ](https://pypi.org/project/selenium/) is one of the most popular and widely used libraries. The selenium python library makes it very easy to use it with Python and run scripts to perform automated tests on websites.
+When it comes to implementing browser automation, [Selenium](https://pypi.org/project/selenium/) is one of the most popular and widely used libraries. The selenium python library makes it very easy to use it with Python and run scripts to perform automated tests on websites.
 
 Automation tests are essential for testing web applications in a real-world scenario just as how a user would normally use the application. It is also used to perform cross-browser tests to ensure the application works on all target browsers.
 
-I created a basic project to understand and implement the basics of browser automation testing with Selenium. The Github repo for the project can be found here.
+I created a basic project to understand and implement the basics of browser automation testing with Selenium.
 
 1. Creating a project
 

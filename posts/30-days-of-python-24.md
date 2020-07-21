@@ -1,14 +1,14 @@
 ---
-title: '30 Days of Python 👨‍💻 - Day 24 - Web Development Basics'
+title: "30 Days of Python 👨‍💻 - Day 24 - Web Development Basics"
 description: "A JavaScript developer's quest to learn python in a month."
-date: '2020-07-14T06:39:16.196Z'
-tags: ['python', 'challenge']
+date: "2020-07-14T06:39:16.196Z"
+tags: ["python", "challenge"]
 draft: false
 ---
 
-Today I explored how to develop websites using Python. There are broadly two aspects of web development - The client-side (Frontend) and the server-side (Backend). Whenever we enter the URL of any website in the browser, the browser does a request to the server which acknowledges the request and provides the contents of the website (HTML, CSS, JS, images etc)  which is then rendered in the browser to display the website. Using Python, we can create a server that can acknowledge the requests made to it and server appropriate content to the requester. The server can be written in any language such as Ruby, JavaScript, Java etc. However using our existing knowledge of Python, we can easily build full-fledged websites.
+Today I explored how to develop websites using Python. There are broadly two aspects of web development - The client-side (Frontend) and the server-side (Backend). Whenever we enter the URL of any website in the browser, the browser does a request to the server which acknowledges the request and provides the contents of the website (HTML, CSS, JS, images etc) which is then rendered in the browser to display the website. Using Python, we can create a server that can acknowledge the requests made to it and server appropriate content to the requester. The server can be written in any language such as Ruby, JavaScript, Java etc. However using our existing knowledge of Python, we can easily build full-fledged websites.
 
-Python has an in-built module `http.server`  [https://docs.python.org/3/library/http.server.html](https://docs.python.org/3/library/http.server.html) which enables us to create a simple server quite easily. However, as per the documentation of the module, it is recommended not to use it in production as it does not have a robust security check in-place. 
+Python has an in-built module `http.server` [https://docs.python.org/3/library/http.server.html](https://docs.python.org/3/library/http.server.html) which enables us to create a simple server quite easily. However, as per the documentation of the module, it is recommended not to use it in production as it does not have a robust security check in-place.
 
 There are many web frameworks available in Python that provides a comprehensive set of features required to develop web applications. Some of the highly popular ones are :
 
@@ -52,7 +52,7 @@ Now we can test flask by building a simple server. I created a Python `server.py
 # import Flask class from flask  package
 from flask import Flask
 # create an instance of the Flask class by providing the application module as a parameter
-app = Flask(__name__) 
+app = Flask(__name__)
 
 @app.route('/')
 def my_first_app():
@@ -69,7 +69,7 @@ $ flask run
  * Running on http://127.0.0.1:5000/
 ```
 
-On opening the 'localhost' URL `http://127.0.0.1:5000` we should see the content of the app. 
+On opening the 'localhost' URL `http://127.0.0.1:5000` we should see the content of the app.
 
 To ensure that the server watches for changes made in the code, the Flask debug mode needs to be enabled like this
 
@@ -82,19 +82,19 @@ Now the server does not need to be restarted after any changes made to the `serv
 
 ## Serving files using Flask
 
-To build the actual startup website, we need to serve website files such as HTML, CSS and maybe some JS. Flask has some conventions for serving files. 
+To build the actual startup website, we need to serve website files such as HTML, CSS and maybe some JS. Flask has some conventions for serving files.
 
 All **template** files (HTML) need to kept inside a **templates** folder and all static files (CSS, JS, assets) need to be placed inside a **static** folder. Flask internally uses the Jinja [https://jinja.palletsprojects.com/en/2.11.x/](https://jinja.palletsprojects.com/en/2.11.x/) templating engine to render the template files. I will be providing the link to the project's Github repo to check the file structure.
 
 I created two template files, `index.html`, `about.html` and a CSS file `styles.css` to manage the global styles. To serve template files, Flask provides a function `render_template`.
 
- `server.py`
+`server.py`
 
 ```python
 # import Flask class from flask  package
 from flask import Flask, render_template
 # create an instance of Flask class by providing the application module as a parameter
-app = Flask(__name__) 
+app = Flask(__name__)
 
 @app.route('/')
 def home():
@@ -107,13 +107,11 @@ def about():
 
 We can pass dynamic variables in the URL as `<variable>` and then render them in the template dynamically using Variable Rules. Since we will be building a simple blog, let's create a post route which can accept post id as parameters and dynamically render different content. Optionally a converter type can be passed to the variable as `<converter:variable>`. These are the following types for converter types available
 
-
-| string      | (default) accepts any text without a slash           |
-| int         | accepts positive integers                            |
-| float       | accepts positive floating-point values               |
-| path        | like string but also accepts slashes                 |
-| uuid        | accepts UUID strings                                 |
-
+| string | (default) accepts any text without a slash |
+| int | accepts positive integers |
+| float | accepts positive floating-point values |
+| path | like string but also accepts slashes |
+| uuid | accepts UUID strings |
 
 `server.py`
 
