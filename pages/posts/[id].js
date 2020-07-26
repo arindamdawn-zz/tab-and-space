@@ -1,23 +1,30 @@
-import Head from 'next/head';
-import ReactMarkdown from 'react-markdown/with-html';
-import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import theme from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import Head from "next/head";
+import ReactMarkdown from "react-markdown/with-html";
+import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import theme from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import Layout from '../../components/layout';
-import Date from '../../components/date';
-import { getAllPostIds, getPostData } from '../../lib/posts';
-import { useState, useEffect } from 'react';
+import Layout from "../../components/layout";
+import Date from "../../components/date";
+import { getAllPostIds, getPostData } from "../../lib/posts";
+import { useState, useEffect } from "react";
+
+const BRANCH_REPO_URL =
+  "https://github.com/arindamdawn/tab-and-space/blob/master";
 
 const TableWrapper = ({ columnAlignment, children }) => {
-  return <div className="table-wrapper">{React.createElement('table', null, children)}</div>;
+  return (
+    <div className="table-wrapper">
+      {React.createElement("table", null, children)}
+    </div>
+  );
 };
 const CodeBlock = ({ language, value }) => {
-  const [copyText, setCopyText] = useState('Copy');
+  const [copyText, setCopyText] = useState("Copy");
   useEffect(() => {
     let interval;
     setTimeout(() => {
-      interval = setCopyText('Copy');
+      interval = setCopyText("Copy");
     }, 4000);
     return () => clearTimeout(interval);
   }, [copyText]);
@@ -26,14 +33,14 @@ const CodeBlock = ({ language, value }) => {
       <CopyToClipboard
         text={value}
         onCopy={() => {
-          setCopyText('Copied!');
+          setCopyText("Copied!");
         }}
       >
         <button className="absolute mt-2 mr-2 bg-gray-700 pt-1 pb-2 px-2 right-0 text-sm rounded-sm hover:bg-gray-800 border-none">
           {copyText}
         </button>
       </CopyToClipboard>
-      <SyntaxHighlighter language={language || 'text'} style={theme}>
+      <SyntaxHighlighter language={language || "text"} style={theme}>
         {value}
       </SyntaxHighlighter>
     </div>
@@ -79,6 +86,20 @@ export default function Post({ postData }) {
           renderers={{ code: CodeBlock, table: TableWrapper }}
         ></ReactMarkdown>
       </article>
+
+      <section>
+        <p className="text-gray-500 text-sm text-center mt-10">
+          Found a typo or an issue? Feel free to 
+          <a
+            className="text-orange-300 mx-1"
+            target="_blank"
+            href={`${BRANCH_REPO_URL}/posts/${postData.id}.md`}
+          >
+            edit
+          </a>
+          this post by submitting a PR
+        </p>
+      </section>
     </Layout>
   );
 }
