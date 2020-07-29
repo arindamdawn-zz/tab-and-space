@@ -1,7 +1,7 @@
 ---
 title: "30 Days of Python 👨‍💻 - Day 30 -Free Python Resources"
 description: "A JavaScript developer's quest to learn python in a month."
-date: "2020-08-20T06:39:16.196Z"
+date: "2020-07-20T06:39:16.196Z"
 tags: ["python", "challenge"]
 draft: false
 ---
