@@ -1,7 +1,7 @@
 ---
 title: '30 Days of Python 👨‍💻 - Day 28 - ML & Data Science II'
 description: "A JavaScript developer's quest to learn python in a month."
-date: '2020-08-18T06:39:16.196Z'
+date: '2020-07-18T06:39:16.196Z'
 tags: ['python', 'challenge', 'machine-learning']
 draft: false
 ---
