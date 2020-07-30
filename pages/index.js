@@ -8,10 +8,10 @@ const Index = ({ title, posts }) => {
   return (
     <Layout pageTitle={title}>
       {posts.map(
-        ({ id, title, date, description, tags, draft, readingTime }) => {
+        ({ slug, title, date, description, tags, draft, readingTime }) => {
           return (
-            <div key={id} className="py-2">
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
+            <div key={slug} className="py-2">
+              <Link href="/posts/[slug]" as={`/posts/${slug}`}>
                 <a className="text-2xl md:text-2xl font-bold leading-10 text-gray-300">
                   {title}
                 </a>

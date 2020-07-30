@@ -6,8 +6,9 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import Layout from "../../components/layout";
 import Date from "../../components/date";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { getAllPostSlugs, getPostData } from "../../lib/posts";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const BRANCH_REPO_URL =
   "https://github.com/arindamdawn/tab-and-space/blob/master";
@@ -87,13 +88,30 @@ export default function Post({ postData }) {
         ></ReactMarkdown>
       </article>
 
+      <section className="prev-next-posts text-gray-500 flex flex-wrap gap-5 md:justify-between justify-center my-8">
+        <div className="prev-post">
+          {postData.previous && (
+            <Link href="/posts/[slug]" as={`/posts/${postData.previous.slug}`}>
+              <a className="hover:text-gray-300">← {postData.previous.slug}</a>
+            </Link>
+          )}
+        </div>
+        <div className="next-post">
+          {postData.next && (
+            <Link href="/posts/[slug]" as={`/posts/${postData.next.slug}`}>
+              <a className="hover:text-gray-300">{postData.next.slug} →</a>
+            </Link>
+          )}
+        </div>
+      </section>
+
       <section>
         <p className="text-gray-500 text-sm text-center mt-10">
-          Found a typo or an issue? Feel free to 
+          Found a typo or an issue? Feel free to
           <a
             className="text-orange-300 mx-1"
             target="_blank"
-            href={`${BRANCH_REPO_URL}/posts/${postData.id}.md`}
+            href={`${BRANCH_REPO_URL}/posts/${postData.slug}.md`}
           >
             edit
           </a>
@@ -105,15 +123,15 @@ export default function Post({ postData }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllPostSlugs();
   return {
     paths,
     fallback: false,
   };
 }
 
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+export async function getStaticProps({ params: { slug } }) {
+  const postData = await getPostData(slug);
   return {
     props: {
       postData,
