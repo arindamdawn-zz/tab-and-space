@@ -45,7 +45,7 @@ I downloaded the Firefox driver for this particular project. The driver needs to
 
 4. Creating a sample automation script
 
-I created a python script file `[automation.py](http://automation.py)` in the root project directory.
+I created a python script file `automation.py` in the root project directory.
 
 Here is a simple code for opening a webpage using Selenium
 

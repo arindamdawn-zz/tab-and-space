@@ -28,7 +28,7 @@ def my_infinite_generator():
 
 result = my_infinite_generator()
 for i in result:
-  print(i) # Kepps on printing values infinitely!
+  print(i) # Keeps on printing values infinitely!
 ```
 
 So what exactly is this generator function and how is it different from a normal function?

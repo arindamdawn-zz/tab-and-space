@@ -75,7 +75,7 @@ page_py = wiki_wiki.page('Python_(programming_language)')
 print("Page - Title: %s" % page_py.title)
 # Page - Title: Python_(programming_language)
 print("Page - Summary: %s" % page_py.summary[0:60])
-# Page - Summary: Python is an interpreted, high-level, general-purpose progra
+# Page - Summary: Python is an interpreted, high-level, general-purpose program
 ```
 
 This is a brief introduction to how we can use external packages in our Python applications. Will explore more on this while building some interesting projects in the coming days.
