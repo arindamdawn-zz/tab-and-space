@@ -23,6 +23,6 @@
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^1.0.1",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.5.2"
+    "tailwindcss": "^1.7.3"
   }
 }
