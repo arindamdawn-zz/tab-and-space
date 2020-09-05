@@ -121,7 +121,7 @@ element.click()
 
 #type inside an element
 the_id = 'email'
-the_email = 'klaus@werner.de'
+the_email = 'sample@gmail.com'
 element = driver.find_element_by_id(the_id)
 element.send_keys(the_email)
 
@@ -129,14 +129,14 @@ element.send_keys(the_email)
 the_id = 'country'
 element = driver.find_element_by_id(the_id)
 select_element = Select(element)
-select_element.select_by_visible_text('Canada')
+select_element.select_by_visible_text('India')
 
 #taking screenshots
 the_path = 'C:/tests/screenshots/1.png'
 driver.save_screenshot(the_path)
 
 #uploading a file
-the_file_path = 'C:/tests/files/example.pdf'
+the_file_path = 'C:/tests/files/test.pdf'
 the_id = 'upload_button'
 element = driver.find_element_by_id(the_id)
 element.send_keys(the_file_path)
@@ -151,7 +151,7 @@ the_element_id = 'card_number'
 the_iframe = driver.find_element_by_id(the_iframe_id)
 driver.switch_to.frame(the_iframe)
 element = driver.find_element_by_id(the_element_id)
-element.send_keys('41111111111111')
+element.send_keys('23232323')
 driver.switch_to.default_content()
 
 #switch to next tab
@@ -197,13 +197,13 @@ the_id = 'register'
 element = driver.find_element_by_id(the_id)
 element.send_keys(Keys.RETURN)
 
-#configure element load timeout
+#configuring element load timeout
 from selenium.webdriver.support.ui import WebDriverWait
 
 the_id = 'register'
 WebDriverWait(driver,10).until(EC.presence_of_element_located((By.ID, the_id)))
 
-#emulate mobile device
+#emulating mobile device
 google_pixel_3_xl_user_agent = 'Mozilla/5.0 (Linux; Android 9.0; Pixel 3 XL Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36'
 pixel_3_xl_emulation = {
    "deviceMetrics": {

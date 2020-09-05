@@ -30,7 +30,7 @@ Some of the topics covered are:
 1. Getting the data ready
 2. Selecting the appropriate algorithm/estimator for the specific problem
 3. Fit the model/algorithm to use it to make predictions on the data
-4. Evaluting a model
+4. Evaluating a model
 5. Improve a model
 6. Saving a loading a trained model
 

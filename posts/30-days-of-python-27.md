@@ -22,9 +22,10 @@ Since I am a windows user, I would like to provide a quick to tip:
 
 As per the basic steps of Machine Learning and Data Science, we shall be creating the project and create a readable notebook that documents the entire process which can then be shared with anyone.
 
-# Basics of Data Science and ML using Netflix Shows project
+## Basics of Data Science and ML using Netflix Shows project
 
 The basic steps of ML and Data Science are:
+
 - Importing data from some source
 - Cleaning up the data to remove any irrelevant data if needed
 - Splitting up data into Training Set and Test Set.
@@ -35,6 +36,7 @@ The basic steps of ML and Data Science are:
 We shall explore the first two steps in this basic project
 
 ## 1. Importing Data and manipulation
+
 The first and the most important thing for Machine Learning and Data Science is the **data** itself. To obtain good meaningful conclusions, we must have good data sets. This input data can be collected in a number of ways - from databases, by scraping websites, public APIs or public shared data sets.
 
 [Kaggle](https://kaggle.com) is a popular website among Machine Learning and Data Science enthusiasts where tons of publicly shared data sets can be found. 
@@ -43,14 +45,13 @@ I decided to search for a Netflix Shows data set and found this one from Kaggle 
 
 Since this data is in a kind of tabular format meaning it is arranged in rows and columns, [pandas](https://pandas.pydata.org) is a great open-source library to process this kind of data and analyze it. It comes along with the Anaconda toolkit, so it can be used directly in the notebook.
 
-
 ```python
 import pandas as pd
 data_frame = pd.read_csv('netflix_titles.csv')
 data_frame.head(10) # show first 10 results
 # prints the data frame in as a table
-
 ```
+
 <div class="table-wrapper">
 <table border="1" class="dataframe">
   <thead>
@@ -225,9 +226,6 @@ data_frame.head(10) # show first 10 results
 </table>
 </div>
 
-
-
-
 ```python
 data_frame.info()
 # shows information about column data types
@@ -252,20 +250,13 @@ data_frame.info()
      11  description   6234 non-null   object
     dtypes: int64(2), object(10)
     memory usage: 584.6+ KB
-    
-
 
 ```python
 data_frame.shape
 # provides information of rows and columns as a tuple
 ```
 
-
-
-
     (6234, 12)
-
-
 
 
 ```python
@@ -699,4 +690,3 @@ The Github repository for this notebook can be found [here](https://github.com/a
 That's all for today's post. Tomorrow will continue exploring more on the other steps of machine learning and data science and perform a visual analysis of data by building charts and diagrams along with creating machine learning models.
 
 Have a great one!
-<h1>Hello</h1>

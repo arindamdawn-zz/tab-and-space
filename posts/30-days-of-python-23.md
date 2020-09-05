@@ -193,6 +193,7 @@ if(__name__ == '__main__'):
 Now using this script, we don't even need to visit Hacker News and search for popular news. We can run this script from our console and get the latest news delivered. Feel free to tweak the script as per your needs and experiment with it or try scraping data from your own favourite website.
 
 We can possibly do a lot of things with the above data such as
+
 - Create an API to use it for an app of website
 - Use it for analysing trends using keywords
 - Create a news aggregator website and more
@@ -202,7 +203,7 @@ We can possibly do a lot of things with the above data such as
 Beautiful Soup has its restrictions when related to scraping data from websites. It is quite simple to use but for scraping data from complex websites that are rendered at the client-side (Angular, React-based websites), the HTML markup won't be available when the website loads. To fetch data from such websites, more advanced libraries can be used. Here are some popular libraries and frameworks for Python.
 
 - [lxml](https://lxml.de/)
-- [Selenium ](https://selenium-python.readthedocs.io/)
+- [Selenium](https://selenium-python.readthedocs.io/)
 - [Scrapy](https://docs.scrapy.org/en/latest/) - It is a complete framework for web scraping
 
 ## References
