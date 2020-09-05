@@ -14,17 +14,17 @@ Frontend Shots is a series of posts where I shall try to explain various importa
 
 ## What are Web Workers?
 
-Imagine you have been given a task to fill water in a container of capacity 2litres using a mug. You can do that easily within few seconds. 
+Imagine you have been given a task to fill water in a container of capacity 2litres using a mug. You can do that easily within a few seconds. 
 
 Now suppose you are asked to next fill up a container of capacity 100litres using the same mug. The idea of it will make you sweat! Instead of doing the work all alone, you request your siblings to help you and you delegate it to them so that you can do some other important work in the meanwhile.
 
-In the JavaScript universe, Web Workers can be thought of something like that. Web Workers can run scripts doing computation-heavy tasks in the background and can communicate with the main thread without freezing the user interface. Browsers first introduced Web Workers in around 2009 to allow programmers to run heavy CPU intensive tasks concurrently utilizing the multi cores of the processor. Web Workers are not a part of JavaScript. It is an API provided by the web browsers just like the browser's Web APIs. Web Workers can do lot of cool stuffs like doing network requests, accessing some window objects like Navigator, XMLHttpRequest, Array, Date, Math, String, window timers. However they cannot directly access the DOM.  Web Workers can be thought of as an independent JavaScript environment running in a parallel universe and can communicate with the main JavaScript universe.
+In the JavaScript universe, Web Workers can be thought of something like that. Web Workers can run scripts doing computation-heavy tasks in the background and can communicate with the main thread without freezing the user interface. Browsers first introduced Web Workers in around 2009 to allow programmers to run heavy CPU intensive tasks concurrently utilizing the multi cores of the processor. Web Workers are not part of JavaScript. It is an API provided by the web browsers just like the browser's Web APIs. Web Workers can do a lot of cool stuff like doing network requests, accessing some window objects like Navigator, XMLHttpRequest, Array, Date, Math, String, window timers. However, they cannot directly access the DOM.  Web Workers can be thought of as an independent JavaScript environment running in a parallel universe and can communicate with the main JavaScript universe.
 
 Web Workers are also known as "Dedicated Workers".
 
 ## Why Web Workers?
 
-Whenever any task is performed that requires heavy computation, it makes the UI irresponsive, making it non-interactive. This is not a great experience for end users as they no longer can interact with the UI until the task is executed. A lot of users still use low end feature phones that do not up top level hardware specs. Running heavy CPU intensive operations on such devices often result in an undesirable experience for users. Even a for loop operation can make the UI unresponsive until it has completed execution.
+Whenever any task is performed that requires heavy computation, it makes the UI irresponsive, making it non-interactive. This is not a great experience for end-users as they no longer can interact with the UI until the task is executed. A lot of users still use low-end feature phones that do not up top-level hardware specs. Running heavy CPU intensive operations on such devices often result in an undesirable experience for users. Even a for loop operation can make the UI unresponsive until it has completed execution.
 
 Web Workers come in extremely handy when it comes to optimizing performance and keeping the UI very responsive. The actual time taken for performing the task remains almost the same, however, the user experience is enhanced to a great extent since the user is not blocked from doing any task.
 
@@ -105,7 +105,7 @@ button:disabled {
 }
 ```
 
-The above code creates an input text box that accepts any number as position to calculate the Fibonacci number at that position. I have deliberately kept the **calculateFibonacci** code unoptimized as of now. 
+The above code creates an input text box that accepts any number as a position to calculate the Fibonacci number at that position. I have deliberately kept the **calculateFibonacci** code unoptimized as of now. 
 
 Try running this code and enter a high value such as 45 and try to calculate the Fibonacci. The UI instantly becomes unresponsive and cannot be interacted unless the function execution is complete. 
 
@@ -157,7 +157,7 @@ Let's try improving the user experience by simply using Web Workers and not doin
 
 Let's see what is happening.
 
-First we check if Web Workers are available or not (Although Web Workers are supported by almost all browsers, its better to check).
+First, we check if Web Workers are available or not (Although Web Workers are supported by almost all browsers, it's better to check).
 
 ```jsx
 window.Worker // checks if Worker is available
@@ -174,7 +174,7 @@ A worker is a script file that needs to be created and the path to the file need
 The Web Worker API provides some events and methods to transfer data between the worker and the main script.
 
 - `postMessage` is a method that can be called on the worker to transfer data from the main script to the worker.
-- `message` is an event that can be attached to the worker. This provides the data from the worker. The data is stored in a 'data' object which I have destructured to get the data from the worker.
+- `message` is an event that can be attached to the worker. This provides data from the worker. The data is stored in a 'data' object which I have destructured to get the data from the worker.
 
 Now let's see the code in the worker
 
@@ -228,10 +228,10 @@ This will drastically reduce the recursion steps and almost instantly produce th
 
 ## Conclusion
 
-This is the basic concept of Web Workers and how they can be used to built performant apps and offer better user experience.  The example I provided is very basic. However Web Workers can be used on various ocassions such as :
+This is the basic concept of Web Workers and how they can be used to built performant apps and offer better user experience.  The example I provided is very basic. However, Web Workers can be used on various ocassions such as :
 
-- Doing image processing inside canvas.
-- Prefetching data from network to provide a faster and seamless user experience.
+- Doing image processing inside the canvas.
+- Prefetching data from the network to provide a faster and seamless user experience.
 - Doing end-to-end data encryption etc,
 
 My idea was to cover the basics of Web Workers in this post which should be a part of a frontend developer's roadmap. There are few concepts such as Shared Workers which are almost the same as that of dedicated workers, but can be shared among script belonging to the same origin (for eg different tabs of the same origin). 
